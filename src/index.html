@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="./output.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <!-- Breakpoint Visualizer -->
+    <section>
+      <div
+        class="bg-green-500 w-10 h-10 fixed top-0 left-0 flex items-center justify-center text-3xl rounded-br-lg"
+      >
+        📱
+      </div>
+      <div
+        class="sm:flex bg-yellow-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        sm
+      </div>
+      <div
+        class="md:flex bg-red-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        md
+      </div>
+      <div
+        class="lg:flex bg-blue-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        lg
+      </div>
+      <div
+        class="xl:flex bg-purple-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        xl
+      </div>
+      <div
+        class="2xl:flex bg-black w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        2xl
+      </div>
+    </section>
+
+    <body
+      class="flex flex-col gap-6 items-center justify-center bg-[#0D1423] h-full w-dvw"
+    >
+      <!-- Name Card -->
+      <section>
+        <div
+          class="name_card_container bg-[#1D1F4B] text-white rounded-lg flex flex-col w-96"
+        >
+          <div
+            class="name_card_upper gap-4 flex items-center justify-center bg-[#5746EA] rounded-lg grow p-8"
+          >
+            <img
+              class="size-28 border-white border-4 rounded-full"
+              src="./images/image-jeremy.png"
+              alt="profile_image"
+            />
+            <div class="report_name_container">
+              <h2 class="font-thin text-white text-opacity-50">Report for</h2>
+              <h1 class="text-3xl font-thin">Jeremy Robson</h1>
+            </div>
+          </div>
+          <div
+            class="name_card_lower flex items-center justify-between text-xl text-opacity-50 text-white p-8"
+          >
+            <h1>Daily</h1>
+            <h1>Weekly</h1>
+            <h1>Monthly</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Item Cards -->
+
+      <section class="flex flex-col gap-10">
+        <!-- Work Card -->
+        <div
+          class="work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        >
+          <div
+            class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
+          >
+            <img
+              src="./images/icon-work.svg"
+              alt=""
+              class="relative size-20 bottom-4 right-4"
+            />
+          </div>
+          <div
+            class="work_card_lower_container bg-[#1D1F4B] flex w-96 rounded-lg text-white items-center justify-between py-8 px-4"
+          >
+            <div class="work_card_lower_left">
+              <h2 class="font-semibold">Work</h2>
+              <h1 class="text-5xl font-thin">32hrs</h1>
+            </div>
+            <div
+              class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
+            >
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt=""
+                class="self-end h-2 opacity-55"
+              />
+
+              <h2 class="">Last Week - 36hrs</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Play Card -->
+        <div
+          class="work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        >
+          <div
+            class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
+          >
+            <img
+              src="./images/icon-play.svg"
+              alt=""
+              class="relative size-20 bottom-4 right-4"
+            />
+          </div>
+          <div
+            class="work_card_lower_container bg-[#1D1F4B] flex w-96 rounded-lg text-white items-center justify-between py-8 px-4"
+          >
+            <div class="work_card_lower_left">
+              <h2 class="font-semibold">Play</h2>
+              <h1 class="text-5xl font-thin">4hrs</h1>
+            </div>
+            <div
+              class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
+            >
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt=""
+                class="self-end h-2 opacity-55"
+              />
+
+              <h2 class="">Last Week - 36hrs</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Study Card -->
+        <div
+          class="work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        >
+          <div
+            class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
+          >
+            <img
+              src="./images/icon-work.svg"
+              alt=""
+              class="relative size-20 bottom-4 right-4"
+            />
+          </div>
+          <div
+            class="work_card_lower_container bg-[#1D1F4B] flex w-96 rounded-lg text-white items-center justify-between py-8 px-4"
+          >
+            <div class="work_card_lower_left">
+              <h2 class="font-semibold">Work</h2>
+              <h1 class="text-5xl font-thin">32hrs</h1>
+            </div>
+            <div
+              class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
+            >
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt=""
+                class="self-end h-2 opacity-55"
+              />
+
+              <h2 class="">Last Week - 36hrs</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Exercise Card -->
+        <div
+          class="work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        >
+          <div
+            class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
+          >
+            <img
+              src="./images/icon-work.svg"
+              alt=""
+              class="relative size-20 bottom-4 right-4"
+            />
+          </div>
+          <div
+            class="work_card_lower_container bg-[#1D1F4B] flex w-96 rounded-lg text-white items-center justify-between py-8 px-4"
+          >
+            <div class="work_card_lower_left">
+              <h2 class="font-semibold">Work</h2>
+              <h1 class="text-5xl font-thin">32hrs</h1>
+            </div>
+            <div
+              class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
+            >
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt=""
+                class="self-end h-2 opacity-55"
+              />
+
+              <h2 class="">Last Week - 36hrs</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Social Card -->
+        <div
+          class="work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        >
+          <div
+            class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
+          >
+            <img
+              src="./images/icon-work.svg"
+              alt=""
+              class="relative size-20 bottom-4 right-4"
+            />
+          </div>
+          <div
+            class="work_card_lower_container bg-[#1D1F4B] flex w-96 rounded-lg text-white items-center justify-between py-8 px-4"
+          >
+            <div class="work_card_lower_left">
+              <h2 class="font-semibold">Work</h2>
+              <h1 class="text-5xl font-thin">32hrs</h1>
+            </div>
+            <div
+              class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
+            >
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt=""
+                class="self-end h-2 opacity-55"
+              />
+
+              <h2 class="">Last Week - 36hrs</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
