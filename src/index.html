@@ -77,14 +77,19 @@
         <div
           class="lg:flex-col lg:items-start lg:gap-4 name_card_lower flex items-center justify-between text-xl text-opacity-50 text-white p-8"
         >
-          <h1>Daily</h1>
-          <h1>Weekly</h1>
-          <h1>Monthly</h1>
+          <h1
+            id="daily_button"
+            class="active:text-white active:text-opacity-100"
+          >
+            Daily
+          </h1>
+          <h1 id="weekly_button">Weekly</h1>
+          <h1 id="monthly_button">Monthly</h1>
         </div>
       </div>
       <!-- Work Card -->
       <div
-        class="lg:w-72 lg:row-start-1 lg:col-start-2 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF8B64]"
+        class="lg:w-72 lg:row-start-1 lg:col-start-2 work_card_container flex flex-col items-center justify-end h-fit rounded-lg bg-[#FF8B64]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -100,7 +105,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Work</h2>
-            <h1 id="work_hours" class="text-5xl font-thin">32hrs</h1>
+            <h1 id="Work_current" class="text-3xl font-thin">32hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -111,13 +116,13 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Work_last">36hrs</b></h2>
           </div>
         </div>
       </div>
       <!-- Play Card -->
       <div
-        class="lg:w-72 lg:row-start-1 lg:col-start-3 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#56C2E6]"
+        class="lg:w-72 lg:row-start-1 lg:col-start-3 justify-end h-fit work_card_container flex flex-col items-center justify-end rounded-lg bg-[#56C2E6]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -133,7 +138,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Play</h2>
-            <h1 class="text-5xl font-thin">10hrs</h1>
+            <h1 id="Play_current" class="text-3xl font-thin">10hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -144,13 +149,13 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Play_last">36hrs</b></h2>
           </div>
         </div>
       </div>
       <!-- Study Card -->
       <div
-        class="lg:w-72 lg:row-start-1 lg:col-start-4 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF5E7D]"
+        class="lg:w-72 lg:row-start-1 lg:col-start-4 justify-end h-fit work_card_container flex flex-col items-center justify-end rounded-lg bg-[#FF5E7D]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -166,7 +171,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Study</h2>
-            <h1 class="text-5xl font-thin">4hrs</h1>
+            <h1 id="Study_current" class="text-3xl font-thin">4hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -177,13 +182,13 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Study_last">36hrs</b></h2>
           </div>
         </div>
       </div>
       <!-- Exercise Card -->
       <div
-        class="lg:w-72 lg:row-start-2 lg:col-start02 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#4BCF83]"
+        class="lg:w-72 lg:row-start-2 lg:col-start02 justify-end h-fit work_card_container flex flex-col items-center justify-end rounded-lg bg-[#4BCF83]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -199,7 +204,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Exercise</h2>
-            <h1 class="text-5xl font-thin">4hrs</h1>
+            <h1 class="text-3xl font-thin" id="Exercise_current">4hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -210,13 +215,13 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Exercise_last">36hrs</b></h2>
           </div>
         </div>
       </div>
       <!-- Social Card -->
       <div
-        class="lg:w-72 lg:row-start-2 lg:col-start-3 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#7236D1]"
+        class="lg:w-72 lg:row-start-2 lg:col-start-3 justify-end h-fit work_card_container flex flex-col items-center justify-end rounded-lg bg-[#7236D1]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -232,7 +237,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Social</h2>
-            <h1 class="text-5xl font-thin">5hrs</h1>
+            <h1 class="text-5xl font-thin" id="Social_current">5hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -243,13 +248,13 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Social_last">36hrs</b></h2>
           </div>
         </div>
       </div>
       <!-- Self Care Card -->
       <div
-        class="lg:w-72 lg:row-start-2 lg:col-start-4 work_card_container flex flex-col items-center justify-end rounded-lg bg-[#F1C75A]"
+        class="lg:w-72 lg:row-start-2 lg:col-start-4 work_card_container justify-end h-fit flex flex-col items-center rounded-lg bg-[#F1C75A]"
       >
         <div
           class="work_card_upper h-12 w-full overflow-hidden flex justify-end"
@@ -265,7 +270,7 @@
         >
           <div class="work_card_lower_left">
             <h2 class="font-semibold">Self Care</h2>
-            <h1 class="text-5xl font-thin">2hrs</h1>
+            <h1 class="text-5xl font-thin" id="Self Care_current">2hrs</h1>
           </div>
           <div
             class="work_card_lower_right text-white text-opacity-50 flex flex-col justify-between items-center gap-5"
@@ -276,7 +281,7 @@
               class="self-end h-2 opacity-55"
             />
 
-            <h2 class="">Last Week - 36hrs</h2>
+            <h2 class="">Last Week - <b id="Self Care_last">36hrs</b></h2>
           </div>
         </div>
       </div>
