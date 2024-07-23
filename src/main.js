@@ -11,7 +11,7 @@ const monthly_button = document.getElementById("monthly_button");
  *======================================================*/
 
 async function populate(time_period) {
-  const requestURL = "http://127.0.0.1:5500/src/data.json";
+  const requestURL = "https://js-front-end-time-tracking-dashboard.vercel.app/data.json";
   const request = new Request(requestURL);
 
   const response = await fetch(request);
