@@ -1,1 +1,2 @@
-console.log("connected");
+const data = require("./data.json");
+console.log(data);
